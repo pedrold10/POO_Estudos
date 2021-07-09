@@ -21,17 +21,17 @@ public class Conta{
 	}
 	public void fecharConta() {
 		if(this.getSaldo()>0) {
-			System.out.println("Conta com saldo, não podendo ser fechada");
+			System.out.println("Conta com saldo, nï¿½o podendo ser fechada");
 		}
 		else if(this.getSaldo()<0) {
-			System.out.println("Conta em débito, não podendo ser fechada");
+			System.out.println("Conta em dï¿½bito, nï¿½o podendo ser fechada");
 		}
 		else {
 			System.out.println("Conta fechada com sucesso!");
 			setStatus(false);
 		}
 	}
-	public void depositar() {
+	public void depositar(float valor) {
 		
 	}
 	public void sacar() {
@@ -72,7 +72,7 @@ public class Conta{
 	public void setSaldo(float saldo) {
 		this.saldo = saldo;
 	}
-	public boolean isStatus() {
+	public boolean getStatus() {
 		return status;
 	}
 	public void setStatus(boolean status) {
