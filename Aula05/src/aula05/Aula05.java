@@ -10,5 +10,9 @@ public class Aula05{
 		p1.estadoAtual();  
 		p1.abrirConta("CC");
 		p1.estadoAtual();
+		p1.depositar(500);
+		p1.estadoAtual();
+		p1.sacar(50);
+		p1.estadoAtual();
 	}
 }
